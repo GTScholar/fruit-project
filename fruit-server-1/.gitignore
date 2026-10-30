@@ -1,0 +1,28 @@
+# ---- 构建产物 ----
+target/
+build/
+out/
+*.class
+
+# ---- IDE ----
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# ---- 日志与临时文件 ----
+logs/
+*.log
+*.tmp
+
+# ---- 本地/生产配置（含真实密码，不要提交） ----
+application-prod.yml
+application-local.yml
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db

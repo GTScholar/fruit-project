@@ -1,0 +1,89 @@
+/* ============================================
+   果漾鲜生 全局样式（水果主题 · 清新浅色）
+   ============================================ */
+
+@use './variables.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  background: $bg;
+  color: $text-main;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 全局滚动条：清新圆润 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary-light;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Element Plus 主题微调 */
+.el-button--primary {
+  --el-button-bg-color: #{$primary};
+  --el-button-border-color: #{$primary};
+  --el-button-hover-bg-color: #{$primary-light};
+  --el-button-hover-border-color: #{$primary-light};
+  --el-button-active-bg-color: #{$primary};
+  --el-button-active-border-color: #{$primary};
+}
+
+.el-tabs__item.is-active {
+  color: $primary;
+}
+.el-tabs__active-bar {
+  background-color: $primary;
+}
+
+/* 通用卡片 */
+.fruit-card {
+  background: $card-bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 页面容器 */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+
+/* 渐变标题 */
+.gradient-text {
+  background: linear-gradient(135deg, #fb923c 0%, #f59e0b 50%, #22c55e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 通用按钮主色强调 */
+.btn-fruit {
+  background: linear-gradient(135deg, #fb923c, #f97316) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(251, 146, 60, 0.35);
+}
